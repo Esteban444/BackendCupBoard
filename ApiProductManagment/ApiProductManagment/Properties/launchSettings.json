@@ -1,0 +1,36 @@
+﻿{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:43945",
+      "sslPort": 44365
+    }
+  },
+  "profiles": {
+    "ApiProductManagment": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "https://localhost:5001;http://localhost:5000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "Development": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "audience": "Domain.com",
+        "expirationMinutes": "15",
+        "issuer": "TalentManagementApp",
+        "JWTKey": "AQSWEDRFGYHUJIKOLPOLIKMNJUYHBGTRFVCDEWQASZXDRQWERTYUIOOPALSJ1234$908%71svbn",
+        "SQL_TALENT_MANAGEMENT_BENCH_CONNECTION": "Server=tcp:kept.database.windows.net,1433;Initial Catalog=TalentManagementDb;Persist Security Info=False;User ID=keptuser;Password=Abc.123456;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+      }
+    }
+  }
+}
