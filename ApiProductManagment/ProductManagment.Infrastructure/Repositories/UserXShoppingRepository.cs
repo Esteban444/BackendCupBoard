@@ -4,11 +4,10 @@ using ProductManagment.Infrastructure.Data;
 
 namespace ProductManagment.Infrastructure.Repositories
 {
-    public class TradeMarkRepository : BaseRepository<TradeMarks>, ITrademarkRepository
+    public class UserXShoppingRepository : BaseRepository<UsersXShoppingLists>, IUserXShoppingRepository
     {
-        public TradeMarkRepository(CupBoardContext context) : base(context)
+        public UserXShoppingRepository(CupBoardContext context) : base(context)
         {
-            
         }
     }
 

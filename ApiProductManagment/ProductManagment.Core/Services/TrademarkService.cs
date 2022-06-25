@@ -5,6 +5,7 @@ using ProductManagment.Contracts.Repositories;
 using ProductManagment.Dto.Models;
 using ProductManagment.Dto.RequestDto;
 using ProductManagment.Dto.ResponseDto;
+using System.Net;
 
 namespace ProductManagment.Core.Services
 {
@@ -28,14 +29,12 @@ namespace ProductManagment.Core.Services
         }
 
 
-        public MarkResponseDto GetTrademark(Guid id)
+        public async Task< MarkResponseDto> GetTrademark(Guid id)
         {
-            var trademarkdb = _repository.QueryById(c => c.IdTrademark == id);
-            if (trademarkdb != null)
-            {
-                return _mapper.Map<MarkResponseDto>(trademarkdb);
-            }
-            throw new Exception("Error reading Trademark");
+            var trademarkdb =  await _repository.FindBy(c => c.IdTrademark == id).FirstOrDefaultAsync();
+            if (trademarkdb == null) throw new GlobalException("Error reading Trademark", HttpStatusCode.NotFound);
+            
+            return _mapper.Map<MarkResponseDto>(trademarkdb);
         }
 
 
@@ -50,35 +49,24 @@ namespace ProductManagment.Core.Services
 
         public async Task<MarkResponseDto> UploadTrademark(Guid id, MarkRequestDto trademark)
         {
-            var trademarkdb = _repository.QueryById(t => t.IdTrademark == id);
-            if (trademarkdb != null)
-            {
-                trademarkdb.Mark = trademark.Mark;
-                // var uptrademark = _mapper.Map<Trademark>(trademark);
-                await _repository.Upload(trademarkdb);
-                var response = _mapper.Map<MarkResponseDto>(trademarkdb);
-                return response;
-            }
-            else
-            {
-                throw new Exception("Error editing Trademark");
-            }
+            var trademarkdb = await _repository.FindBy(t => t.IdTrademark == id).FirstOrDefaultAsync();
+            if (trademarkdb == null) throw new GlobalException("Error editing Trademark", HttpStatusCode.NotFound);
+            
+            trademarkdb.Mark = trademark.Mark;
+            await _repository.Upload(trademarkdb);
+            var response = _mapper.Map<MarkResponseDto>(trademarkdb);
+            return response;
         }
 
 
         public async Task<MarkResponseDto> DeleteTrademark(Guid id)
         {
-            var trademarkDb = _repository.QueryById(t => t.IdTrademark == id);
-            if (trademarkDb != null)
-            {
-                await _repository.Delete(trademarkDb);
-                var response = _mapper.Map<MarkResponseDto>(trademarkDb);
-                return response;
-            }
-            else
-            {
-                throw new Exception("Error deleting Trademark");
-            }
+            var trademarkDb =  await _repository.FindBy(t => t.IdTrademark == id).FirstOrDefaultAsync();
+            if (trademarkDb == null) throw new GlobalException("Error deleting Trademark", HttpStatusCode.NotFound);
+            
+            await _repository.Delete(trademarkDb);
+            var response = _mapper.Map<MarkResponseDto>(trademarkDb);
+            return response;
         }
     }
 }
