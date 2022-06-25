@@ -4,12 +4,11 @@ using ProductManagment.Infrastructure.Data;
 
 namespace ProductManagment.Infrastructure.Repositories
 {
-    public class TradeMarkRepository : BaseRepository<TradeMarks>, ITrademarkRepository
+    public class ShoppingListRepository : BaseRepository<ShoppingLists>, IShoppingListRepository
     {
-        public TradeMarkRepository(CupBoardContext context) : base(context)
+        public ShoppingListRepository(CupBoardContext context) : base(context)
         {
             
         }
     }
-
 }

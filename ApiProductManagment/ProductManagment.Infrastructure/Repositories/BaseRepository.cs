@@ -1,4 +1,5 @@
-﻿using ProductManagment.Contracts.Repositories;
+﻿using Microsoft.EntityFrameworkCore;
+using ProductManagment.Contracts.Repositories;
 using ProductManagment.Infrastructure.Data;
 using System.Linq.Expressions;
 
@@ -20,10 +21,21 @@ namespace ProductManagment.Infrastructure.Repositories
             return entitySet.AsQueryable();
         }
 
-        public T QueryById(Expression<Func<T, bool>> predicate)
+        public virtual IQueryable<T> FindBy(Expression<Func<T, bool>> predicate)
+        {
+            return GetAll().Where(predicate);
+        }
+
+        public virtual T GetSingle(Expression<Func<T, bool>> predicate)
         {
             return GetAll().FirstOrDefault(predicate)!;
         }
+
+        public virtual Task<T> GetFirst(Expression<Func<T, bool>> predicate)
+        {
+            return GetAll().FirstOrDefaultAsync(predicate)!;
+        }
+
 
         public async Task Create(T model)
         {

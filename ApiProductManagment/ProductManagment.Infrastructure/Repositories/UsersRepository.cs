@@ -4,11 +4,10 @@ using ProductManagment.Infrastructure.Data;
 
 namespace ProductManagment.Infrastructure.Repositories
 {
-    public class TradeMarkRepository : BaseRepository<TradeMarks>, ITrademarkRepository
+    public class UsersRepository : BaseRepository<ApplicationUser>, IUserRepository
     {
-        public TradeMarkRepository(CupBoardContext context) : base(context)
+        public UsersRepository(CupBoardContext context) : base(context)
         {
-            
         }
     }
 

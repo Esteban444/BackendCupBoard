@@ -13,7 +13,8 @@ namespace ApiProductManagment.Configurations
             CreateMap<TradeMarks, MarkRequestDto>().ReverseMap();
             CreateMap<TradeMarks, MarkResponseDto>().ReverseMap();
 
-            
+            CreateMap<ShoppingLists, ShoppingListRequestDto>().ReverseMap();
+            CreateMap<ShoppingLists, ShoppingListResponseDto>().ReverseMap();
         }   
     }
 }
