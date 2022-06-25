@@ -202,7 +202,9 @@ namespace ProductManagment.Infrastructure.Data
             modelBuilder.Entity<CupBoards>().Property(e => e.IdCupBoard).HasConversion<string>();
             modelBuilder.Entity<CupBoardDetails>().Property(e => e.IdCupboardDetail).HasConversion<string>();
             modelBuilder.Entity<Products>().Property(e => e.IdProduct).HasConversion<string>();
+
             modelBuilder.Entity<ShoppingLists>().Property(e => e.IdShopping).HasConversion<string>();
+            modelBuilder.Entity<ShoppingLists>().Property(e => e.IdProduct).HasConversion<string>();
 
             modelBuilder.Entity<TradeMarks>().Property(e => e.IdTrademark).HasConversion<string>();
 

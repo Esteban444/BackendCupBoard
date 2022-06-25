@@ -34,9 +34,10 @@ namespace ApiProductManagment.Controllers
         [ProducesResponseType(typeof(MarkResponseDto), 200)]
         [ProducesResponseType(typeof(MarkResponseDto), 400)]
         [ProducesResponseType(typeof(FailedOperationResultDto), 404)]
-        public ActionResult<MarkResponseDto> GetCategory(Guid id)
+        public async Task<IActionResult> GetCategory(Guid id)
         {
-            return _trademarkService.GetTrademark(id);
+           var mark =  await _trademarkService.GetTrademark(id);
+           return Ok(mark);
         }
 
         [HttpPost("mark")]
