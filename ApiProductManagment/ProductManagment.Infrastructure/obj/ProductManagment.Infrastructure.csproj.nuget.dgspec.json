@@ -4,14 +4,72 @@
     "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Infrastructure\\ProductManagment.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Infrastructure\\ProductManagment.Infrastructure.csproj": {
+    "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Contracts\\ProductManagment.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Infrastructure\\ProductManagment.Infrastructure.csproj",
-        "projectName": "ProductManagment.Infrastructure",
-        "projectPath": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Infrastructure\\ProductManagment.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Contracts\\ProductManagment.Contracts.csproj",
+        "projectName": "ProductManagment.Contracts",
+        "projectPath": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Contracts\\ProductManagment.Contracts.csproj",
         "packagesPath": "C:\\Users\\juan.alvarez\\.nuget\\packages\\",
-        "outputPath": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Infrastructure\\obj\\",
+        "outputPath": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\juan.alvarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Dto\\ProductManagment.Dto.csproj": {
+                "projectPath": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Dto\\ProductManagment.Dto.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Dto\\ProductManagment.Dto.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Dto\\ProductManagment.Dto.csproj",
+        "projectName": "ProductManagment.Dto",
+        "projectPath": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Dto\\ProductManagment.Dto.csproj",
+        "packagesPath": "C:\\Users\\juan.alvarez\\.nuget\\packages\\",
+        "outputPath": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Dto\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\juan.alvarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +97,79 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Infrastructure\\ProductManagment.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Infrastructure\\ProductManagment.Infrastructure.csproj",
+        "projectName": "ProductManagment.Infrastructure",
+        "projectPath": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Infrastructure\\ProductManagment.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\juan.alvarez\\.nuget\\packages\\",
+        "outputPath": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\juan.alvarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Contracts\\ProductManagment.Contracts.csproj": {
+                "projectPath": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Contracts\\ProductManagment.Contracts.csproj"
+              },
+              "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Dto\\ProductManagment.Dto.csproj": {
+                "projectPath": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Dto\\ProductManagment.Dto.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
