@@ -798,7 +798,8 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "AutoMapper": "11.0.1",
-          "ProductManagment.Contracts": "1.0.0"
+          "ProductManagment.Contracts": "1.0.0",
+          "ProductManagment.Infrastructure": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ProductManagment.Core.dll": {}

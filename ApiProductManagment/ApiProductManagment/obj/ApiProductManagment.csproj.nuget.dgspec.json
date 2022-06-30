@@ -181,6 +181,9 @@
             "projectReferences": {
               "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Contracts\\ProductManagment.Contracts.csproj": {
                 "projectPath": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Contracts\\ProductManagment.Contracts.csproj"
+              },
+              "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Infrastructure\\ProductManagment.Infrastructure.csproj": {
+                "projectPath": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Infrastructure\\ProductManagment.Infrastructure.csproj"
               }
             }
           }

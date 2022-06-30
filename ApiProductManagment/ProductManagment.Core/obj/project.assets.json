@@ -328,6 +328,21 @@
         "runtime": {
           "bin/placeholder/ProductManagment.Dto.dll": {}
         }
+      },
+      "ProductManagment.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.6",
+          "ProductManagment.Contracts": "1.0.0",
+          "ProductManagment.Dto": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProductManagment.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProductManagment.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -872,12 +887,18 @@
       "type": "project",
       "path": "../ProductManagment.Dto/ProductManagment.Dto.csproj",
       "msbuildProject": "../ProductManagment.Dto/ProductManagment.Dto.csproj"
+    },
+    "ProductManagment.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../ProductManagment.Infrastructure/ProductManagment.Infrastructure.csproj",
+      "msbuildProject": "../ProductManagment.Infrastructure/ProductManagment.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "AutoMapper >= 11.0.1",
-      "ProductManagment.Contracts >= 1.0.0"
+      "ProductManagment.Contracts >= 1.0.0",
+      "ProductManagment.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -909,6 +930,9 @@
           "projectReferences": {
             "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Contracts\\ProductManagment.Contracts.csproj": {
               "projectPath": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Contracts\\ProductManagment.Contracts.csproj"
+            },
+            "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Infrastructure\\ProductManagment.Infrastructure.csproj": {
+              "projectPath": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Infrastructure\\ProductManagment.Infrastructure.csproj"
             }
           }
         }
