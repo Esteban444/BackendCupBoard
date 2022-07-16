@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Core\\ProductManagment.Core.csproj": {}
+    "C:\\Repositorios\\Mas\\BackendCupBoard\\ApiProductManagment\\ProductManagment.Core\\ProductManagment.Core.csproj": {}
   },
   "projects": {
-    "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Contracts\\ProductManagment.Contracts.csproj": {
+    "C:\\Repositorios\\Mas\\BackendCupBoard\\ApiProductManagment\\ProductManagment.Contracts\\ProductManagment.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Contracts\\ProductManagment.Contracts.csproj",
+        "projectUniqueName": "C:\\Repositorios\\Mas\\BackendCupBoard\\ApiProductManagment\\ProductManagment.Contracts\\ProductManagment.Contracts.csproj",
         "projectName": "ProductManagment.Contracts",
-        "projectPath": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Contracts\\ProductManagment.Contracts.csproj",
-        "packagesPath": "C:\\Users\\juan.alvarez\\.nuget\\packages\\",
-        "outputPath": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Contracts\\obj\\",
+        "projectPath": "C:\\Repositorios\\Mas\\BackendCupBoard\\ApiProductManagment\\ProductManagment.Contracts\\ProductManagment.Contracts.csproj",
+        "packagesPath": "C:\\Users\\Juan.Echavarria\\.nuget\\packages\\",
+        "outputPath": "C:\\Repositorios\\Mas\\BackendCupBoard\\ApiProductManagment\\ProductManagment.Contracts\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\juan.alvarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Juan.Echavarria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Dto\\ProductManagment.Dto.csproj": {
-                "projectPath": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Dto\\ProductManagment.Dto.csproj"
+              "C:\\Repositorios\\Mas\\BackendCupBoard\\ApiProductManagment\\ProductManagment.Dto\\ProductManagment.Dto.csproj": {
+                "projectPath": "C:\\Repositorios\\Mas\\BackendCupBoard\\ApiProductManagment\\ProductManagment.Dto\\ProductManagment.Dto.csproj"
               }
             }
           }
@@ -43,6 +47,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "System.Runtime": {
+              "target": "Package",
+              "version": "[4.3.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -58,21 +68,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Core\\ProductManagment.Core.csproj": {
+    "C:\\Repositorios\\Mas\\BackendCupBoard\\ApiProductManagment\\ProductManagment.Core\\ProductManagment.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Core\\ProductManagment.Core.csproj",
+        "projectUniqueName": "C:\\Repositorios\\Mas\\BackendCupBoard\\ApiProductManagment\\ProductManagment.Core\\ProductManagment.Core.csproj",
         "projectName": "ProductManagment.Core",
-        "projectPath": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Core\\ProductManagment.Core.csproj",
-        "packagesPath": "C:\\Users\\juan.alvarez\\.nuget\\packages\\",
-        "outputPath": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Core\\obj\\",
+        "projectPath": "C:\\Repositorios\\Mas\\BackendCupBoard\\ApiProductManagment\\ProductManagment.Core\\ProductManagment.Core.csproj",
+        "packagesPath": "C:\\Users\\Juan.Echavarria\\.nuget\\packages\\",
+        "outputPath": "C:\\Repositorios\\Mas\\BackendCupBoard\\ApiProductManagment\\ProductManagment.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\juan.alvarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Juan.Echavarria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -86,11 +100,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Contracts\\ProductManagment.Contracts.csproj": {
-                "projectPath": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Contracts\\ProductManagment.Contracts.csproj"
+              "C:\\Repositorios\\Mas\\BackendCupBoard\\ApiProductManagment\\ProductManagment.Contracts\\ProductManagment.Contracts.csproj": {
+                "projectPath": "C:\\Repositorios\\Mas\\BackendCupBoard\\ApiProductManagment\\ProductManagment.Contracts\\ProductManagment.Contracts.csproj"
               },
-              "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Infrastructure\\ProductManagment.Infrastructure.csproj": {
-                "projectPath": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Infrastructure\\ProductManagment.Infrastructure.csproj"
+              "C:\\Repositorios\\Mas\\BackendCupBoard\\ApiProductManagment\\ProductManagment.Infrastructure\\ProductManagment.Infrastructure.csproj": {
+                "projectPath": "C:\\Repositorios\\Mas\\BackendCupBoard\\ApiProductManagment\\ProductManagment.Infrastructure\\ProductManagment.Infrastructure.csproj"
               }
             }
           }
@@ -108,6 +122,10 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[11.0.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.10.0, )"
             }
           },
           "imports": [
@@ -125,21 +143,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Dto\\ProductManagment.Dto.csproj": {
+    "C:\\Repositorios\\Mas\\BackendCupBoard\\ApiProductManagment\\ProductManagment.Dto\\ProductManagment.Dto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Dto\\ProductManagment.Dto.csproj",
+        "projectUniqueName": "C:\\Repositorios\\Mas\\BackendCupBoard\\ApiProductManagment\\ProductManagment.Dto\\ProductManagment.Dto.csproj",
         "projectName": "ProductManagment.Dto",
-        "projectPath": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Dto\\ProductManagment.Dto.csproj",
-        "packagesPath": "C:\\Users\\juan.alvarez\\.nuget\\packages\\",
-        "outputPath": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Dto\\obj\\",
+        "projectPath": "C:\\Repositorios\\Mas\\BackendCupBoard\\ApiProductManagment\\ProductManagment.Dto\\ProductManagment.Dto.csproj",
+        "packagesPath": "C:\\Users\\Juan.Echavarria\\.nuget\\packages\\",
+        "outputPath": "C:\\Repositorios\\Mas\\BackendCupBoard\\ApiProductManagment\\ProductManagment.Dto\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\juan.alvarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Juan.Echavarria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -168,6 +190,10 @@
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.6, )"
+            },
+            "System.Runtime": {
+              "target": "Package",
+              "version": "[4.3.1, )"
             }
           },
           "imports": [
@@ -185,21 +211,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Infrastructure\\ProductManagment.Infrastructure.csproj": {
+    "C:\\Repositorios\\Mas\\BackendCupBoard\\ApiProductManagment\\ProductManagment.Infrastructure\\ProductManagment.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Infrastructure\\ProductManagment.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Repositorios\\Mas\\BackendCupBoard\\ApiProductManagment\\ProductManagment.Infrastructure\\ProductManagment.Infrastructure.csproj",
         "projectName": "ProductManagment.Infrastructure",
-        "projectPath": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Infrastructure\\ProductManagment.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\juan.alvarez\\.nuget\\packages\\",
-        "outputPath": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Infrastructure\\obj\\",
+        "projectPath": "C:\\Repositorios\\Mas\\BackendCupBoard\\ApiProductManagment\\ProductManagment.Infrastructure\\ProductManagment.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Juan.Echavarria\\.nuget\\packages\\",
+        "outputPath": "C:\\Repositorios\\Mas\\BackendCupBoard\\ApiProductManagment\\ProductManagment.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\juan.alvarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Juan.Echavarria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -213,11 +243,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Contracts\\ProductManagment.Contracts.csproj": {
-                "projectPath": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Contracts\\ProductManagment.Contracts.csproj"
+              "C:\\Repositorios\\Mas\\BackendCupBoard\\ApiProductManagment\\ProductManagment.Contracts\\ProductManagment.Contracts.csproj": {
+                "projectPath": "C:\\Repositorios\\Mas\\BackendCupBoard\\ApiProductManagment\\ProductManagment.Contracts\\ProductManagment.Contracts.csproj"
               },
-              "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Dto\\ProductManagment.Dto.csproj": {
-                "projectPath": "C:\\Mas\\BackendCupboard\\ApiProductManagment\\ProductManagment.Dto\\ProductManagment.Dto.csproj"
+              "C:\\Repositorios\\Mas\\BackendCupBoard\\ApiProductManagment\\ProductManagment.Dto\\ProductManagment.Dto.csproj": {
+                "projectPath": "C:\\Repositorios\\Mas\\BackendCupBoard\\ApiProductManagment\\ProductManagment.Dto\\ProductManagment.Dto.csproj"
               }
             }
           }
@@ -252,7 +282,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

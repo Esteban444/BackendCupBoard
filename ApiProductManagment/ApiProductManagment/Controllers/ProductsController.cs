@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using ProductManagment.Contracts.Interfaces;
 using ProductManagment.Dto.RequestDto;
 using ProductManagment.Dto.ResponseDto;
@@ -7,6 +9,7 @@ namespace ApiProductManagment.Controllers
 {
     [Route("api/products")]
     [ApiController]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class ProductsController : ControllerBase
     {
         private readonly IProductService _productService;

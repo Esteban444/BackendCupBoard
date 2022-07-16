@@ -9,6 +9,7 @@ namespace ApiProductManagment.Configurations
     {
         public AutoMapperProfile()
         {
+            CreateMap<ApplicationUser, RegisterRequestDto>().ReverseMap();
 
             CreateMap<TradeMarks, MarkRequestDto>().ReverseMap();
             CreateMap<TradeMarks, MarkResponseDto>().ReverseMap();
