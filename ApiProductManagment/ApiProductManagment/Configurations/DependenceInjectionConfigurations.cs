@@ -15,13 +15,17 @@ namespace ApiProductManagment.Configurations
             #region Repositories
             services.AddScoped<IUserRepository, UsersRepository >();
             services.AddScoped<ITrademarkRepository, TradeMarkRepository >();
+            services.AddScoped<IProductsRepository, ProductsRepository >();
+            services.AddScoped<ICategoryXProductRepository, CategoryXProductRepository >(); 
             services.AddScoped<IUserXShoppingRepository, UserXShoppingRepository >();
             services.AddScoped<IShoppingListRepository, ShoppingListRepository >();
-
+            services.AddScoped<ISettingsRepository, SettingsRepository>();
             #endregion
 
             #region Services
+            services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<ITrademarkService, TrademarkService>();
+            services.AddScoped<IProductService, ProductsService>();
             services.AddScoped<IShoppingListService, ShoppingListService>();
             
             
@@ -29,6 +33,7 @@ namespace ApiProductManagment.Configurations
 
             #region Validators
             services.AddScoped<IValidator<MarkRequestDto>, MarkValidations>();
+            services.AddScoped<IValidator<ProductsRequestDto>, ProductsValidations>();
             services.AddScoped<IValidator<ShoppingListRequestDto>, ShoppingListValidations>(); 
            
             #endregion Validators
