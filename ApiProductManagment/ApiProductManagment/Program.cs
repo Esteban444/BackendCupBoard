@@ -51,9 +51,11 @@ app.UseHttpsRedirection();
 
 app.UseExceptionHandler(HandlingExceptions.UseAPIErrorHandling);
 
+app.UseCors("api");
+
 app.UseRouting();
 
-app.UseCors("api");
+app.UseAuthentication();
 
 app.UseAuthorization();
 

@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using ProductManagment.Contracts.Interfaces;
 using ProductManagment.Dto.RequestDto;
 using ProductManagment.Dto.ResponseDto;
@@ -7,7 +9,7 @@ namespace ApiProductManagment.Controllers
 {
     [Route("api/ShoppingLists")]
     [ApiController]
-
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class ShoppingListsController : ControllerBase
     {
         private readonly IShoppingListService _shoppingkService;
