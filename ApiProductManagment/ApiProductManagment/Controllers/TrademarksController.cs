@@ -23,7 +23,7 @@ namespace ApiProductManagment.Controllers
             _mapper = mapper;
         }
 
-        [HttpGet("get-all-marks")]
+        [HttpGet("all-marks")]
         [ProducesResponseType(typeof(MarkResponseDto), 200)]
         [ProducesResponseType(typeof(MarkResponseDto), 400)]
         [ProducesResponseType(typeof(FailedOperationResultDto), 404)]
@@ -33,7 +33,7 @@ namespace ApiProductManagment.Controllers
             return Ok(trademarks);
         }
 
-        [HttpGet("get-mark-by/{id}")]
+        [HttpGet("mark-by/{id}")]
         [ProducesResponseType(typeof(MarkResponseDto), 200)]
         [ProducesResponseType(typeof(MarkResponseDto), 400)]
         [ProducesResponseType(typeof(FailedOperationResultDto), 404)]

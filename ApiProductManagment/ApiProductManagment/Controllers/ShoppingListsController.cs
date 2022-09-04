@@ -19,7 +19,7 @@ namespace ApiProductManagment.Controllers
             _shoppingkService = shoppingService;
         }
 
-        [HttpGet("get-all-shopping-list")]
+        [HttpGet("all-shopping-list")]
         [ProducesResponseType(typeof(ShoppingListResponseDto), 200)]
         [ProducesResponseType(typeof(ShoppingListResponseDto), 400)]
         [ProducesResponseType(typeof(FailedOperationResultDto), 404)]
@@ -29,7 +29,7 @@ namespace ApiProductManagment.Controllers
             return Ok(shoppingLists);
         }
 
-        [HttpGet("get-shopping-list-by/{id}")]
+        [HttpGet("shopping-list-by/{id}")]
         [ProducesResponseType(typeof(ShoppingListResponseDto), 200)]
         [ProducesResponseType(typeof(ShoppingListResponseDto), 400)]
         [ProducesResponseType(typeof(FailedOperationResultDto), 404)]

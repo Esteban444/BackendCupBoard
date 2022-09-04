@@ -19,7 +19,7 @@ namespace ApiProductManagment.Controllers
             _productService = productService;
         }
 
-        [HttpGet("get-all-products")]
+        [HttpGet("all-products")]
         [ProducesResponseType(typeof(ProductsResponseDto), 200)]
         [ProducesResponseType(typeof(ProductsResponseDto), 400)]
         [ProducesResponseType(typeof(FailedOperationResultDto), 404)]
@@ -29,7 +29,7 @@ namespace ApiProductManagment.Controllers
             return Ok(products);
         }
 
-        [HttpGet(("get-product-by/{id}"))]
+        [HttpGet(("product-by/{id}"))]
         [ProducesResponseType(typeof(ProductsResponseDto), 200)]
         [ProducesResponseType(typeof(ProductsResponseDto), 400)]
         [ProducesResponseType(typeof(FailedOperationResultDto), 404)]
@@ -48,7 +48,7 @@ namespace ApiProductManagment.Controllers
             return Ok(resultproduct);
         }
 
-        [HttpPut("delete-product-by/{id}")]
+        [HttpPut("update-product-by/{id}")]
         [ProducesResponseType(typeof(ProductsResponseDto), 200)]
         [ProducesResponseType(typeof(ProductsResponseDto), 400)]
         [ProducesResponseType(typeof(FailedOperationResultDto), 404)]
