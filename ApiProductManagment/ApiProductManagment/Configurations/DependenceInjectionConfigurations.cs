@@ -14,6 +14,8 @@ namespace ApiProductManagment.Configurations
         {
             #region Repositories
             services.AddScoped<IUserRepository, UsersRepository >();
+            services.AddScoped<ICupBoardRepository, CupBoardsRepository >();
+            services.AddScoped<ICupBoardDetailRepository, CupBoardDetailRepository >();
             services.AddScoped<ITrademarkRepository, TradeMarkRepository >();
             services.AddScoped<IProductsRepository, ProductsRepository >();
             services.AddScoped<ICategoryXProductRepository, CategoryXProductRepository >(); 
@@ -24,6 +26,7 @@ namespace ApiProductManagment.Configurations
 
             #region Services
             services.AddScoped<IAuthService, AuthService>();
+            services.AddScoped<ICupBoardService, CupBoardService>();
             services.AddScoped<ITrademarkService, TrademarkService>();
             services.AddScoped<IProductService, ProductsService>();
             services.AddScoped<IShoppingListService, ShoppingListService>();
